@@ -49,6 +49,7 @@ const signUpUser = async (req, res) => {
     res.status(500).json({
       status: "failed!",
       message: "something went wrong!",
+      error: `${er}`,
     });
   }
 };
